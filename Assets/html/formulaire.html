@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Jarditou</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/jarditou_favicon.ico">
+    <style>
+        #intro {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <header>
+        <div class="row">
+            <img src="../img/jarditou_logo-removebg-preview.png" alt="logo_jarditou" title="Jarditou"
+                class="img-fluid col-sm-6" width="400px" height="100px">
+
+            <p id="intro" class="m-auto col-sm-6">Tout le Jardin</p>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: aliceblue;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Jarditou.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tableaux.html">Tableaux</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulaire.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </nav>
+    <img src="../img/promotion.jpg" alt="Promotion_terrasse" title="promotion" class="img-fluid" width="100%">
+    <br>
+    <br>
+    <br>
+    <form action="validation.php" method="POST" id="inscription">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4 position-relative">
+                <label for="validationTooltip01" class="form-label">nom</label>
+                <input type="text" class="form-control" id="validationTooltip01" value="" placeholder="Ex : lacheau"
+                    required>
+                <div class="valid-tooltip">
+                </div>
+            </div>
+            <div class="col-md-4 position-relative">
+                <label for="validationTooltip02" class="form-label">prenom</label>
+                <input type="text" class="form-control" id="validationTooltip02" value="" placeholder="Ex : pierre"
+                    required>
+                <div class="valid-tooltip">
+                </div>
+            </div>
+            <br>
+            <div>Sexe&#42;
+                <label><input type="radio" name="sexe" value="feminin" checked required> F&eacute;minin</label>
+                <label><input type="radio" name="sexe" value="masculin" required> Masculin</label>
+                <label><input type="radio" name="sexe" value="autre" required> autre</label>
+            </div>
+
+            <br>
+
+            <fieldset>
+                <label for="date">Date de naissance&#42;:</label><input type="date" name="ddn" id="date">
+                <br>
+                <div class="col-md-4 position-relative">
+                    <label for="validationTooltipUsername" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                        <input type="text" class="form-control" id="validationTooltipUsername"
+                            aria-describedby="validationTooltipUsernamePrepend" required placeholder="PhillipeLacheau@gmail.com">
+                        <div class="invalid-tooltip">
+                            merci d'indiquez une adresse email valide
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative">
+                    <label for="validationTooltip03" class="form-label">Ville</label>
+                    <input type="text" class="form-control" id="validationTooltip03" required>
+                    <div class="invalid-tooltip">
+                        indiquez une ville correcte
+                    </div>
+                </div>
+                <div class="col-md-3 position-relative">
+                    <label for="validationTooltip04" class="form-label">Département</label>
+                    <select class="form-select" id="validationTooltip04" required>
+                        <option selected disabled value="">choisissez...</option>
+                        <option>01 Ain</option>
+                        <option>02 Aisne</option>
+                        <option>03 Allier</option>
+                        <option>04 Alpe Haute-Provence</option>
+                        <option>05 Hautes-Alpes</option>
+                        <option>06 Alpes-Maritimes</option>
+                        <option>07 Ardêche</option>
+                        <option>08 Ardennes</option>
+                        <option>09 Ariège</option>
+                        <option>10 Aube</option>
+                        <option>11 Aude</option>
+                        <option>12 Aveyron</option>
+                        <option>13 Bouche-du-Rhône</option>
+                        <option>14 Calvados</option>
+                        <option>15 Cantal </option>
+                        <option>16 Charente </option>
+                        <option>17 Charente-Maritime </option>
+                        <option>18 Cher </option>
+                        <option>19 Corrèze </option>
+                        <option>2A Corse-du-Sud </option>
+                        <option>2B Haute-Corse </option>
+                        <option>21 Côte-d'Or</option>
+                        <option>22 Côtes d'Armor</option>
+                        <option>23 Creuse</option>
+                        <option>24 Dordogne</option>
+                        <option>25 Doubs</option>
+                        <option>26 Drôme</option>
+                        <option>27 Eure</option>
+                        <option>28 Eure-et-Loir</option>
+                        <option>29 Finistère</option>
+                        <option>30 Gard</option>
+                        <option>31 Haute-Garonne</option>
+                        <option>32 Gers</option>
+                        <option>33 Gironde</option>
+                        <option>34 Hérault</option>
+                        <option>35 Île-et-Vilaine</option>
+                        <option>36 Indre</option>
+                        <option>37 Indre-et-Loire</option>
+                        <option>38 Isère</option>
+                        <option>39 Jura</option>
+                        <option>40 Landes</option>
+                        <option>41 Loir-et-Cher</option>
+                        <option>42 Loire</option>
+                        <option>43 Haute-Loire</option>
+                        <option>44 Loire-Atlantique</option>
+                        <option>45 Loiret</option>
+                        <option>46 Lot</option>
+                        <option>47 Lot-et-Garonne</option>
+                        <option>48 Lozère</option>
+                        <option>49 Maine-et-Loire</option>
+                        <option>50 Manche</option>
+                        <option>51 Marne</option>
+                        <option>52 Haute-Marne</option>
+                        <option>53 Mayenne</option>
+                        <option>54 Meurthe-et-Moselle</option>
+                        <option>55 Meuse</option>
+                        <option>56 Morbihan</option>
+                        <option>57 Moselle</option>
+                        <option>58 Nièvre</option>
+                        <option>59 Nord</option>
+                        <option>60 Oise</option>
+                        <option>61 Orne</option>
+                        <option>62 Pas-de-Calais</option>
+                        <option>63 Puy-de-Dôme</option>
+                        <option>64 Pyrénées-Atlantiques</option>
+                        <option>65 Hautes-Pyrénées</option>
+                        <option>66 Pyrénées-Orientales</option>
+                        <option>67 Bas-Rhin</option>
+                        <option>68 Haut-Rhin</option>
+                        <option>69 Rhône</option>
+                        <option>70 Haute-Saône</option>
+                        <option>71 Saône-et-Loire</option>
+                        <option>72 Sarthe</option>
+                        <option>73 Savoie</option>
+                        <option>74 Haute-Savoie</option>
+                        <option>75 Paris</option>
+                        <option>76 Seine-Maritime</option>
+                        <option>77 Seine-et-Marne</option>
+                        <option>78 Yvelines</option>
+                        <option>79 Deux-Sèvres</option>
+                        <option>80 Somme</option>
+                        <option>81 Tarn</option>
+                        <option>82 Tarn-et-Garonne</option>
+                        <option>83 Var</option>
+                        <option>84 Vaucluse</option>
+                        <option>85 Vendée</option>
+                        <option>86 Vienne</option>
+                        <option>87 Haute-Vienne</option>
+                        <option>88 Vosges</option>
+                        <option>89 Yonne</option>
+                        <option>90 Territoire-de-Belfort</option>
+                        <option>91 Essonne</option>
+                        <option>92 Hauts-de-Seine</option>
+                        <option>93 Seine-Saint-Denis</option>
+                        <option>94 Val-de-Marne</option>
+                        <option>95 Val-d'Oise</option>
+                    </select>
+                    <div class="invalid-tooltip">
+                        indiquez une département valide
+                    </div>
+                </div>
+                <div class="col-md-3 position-relative">
+                    <label for="validationTooltip05" class="form-label">Adresse</label>
+                    <input type="text" class="form-control" id="validationTooltip05" required>
+                    <div class="invalid-tooltip">
+                        indiquez une Adresse valide
+                    </div>
+                </div>
+                <legend>Votre demande</legend>
+
+                <br>
+
+                <fieldset>
+                    <label for="sujet">Sujet&#42:</label>
+                    <select id="sujet">
+                        <label>
+                            <option value="" selected>Veuillez séléctionner un sujet</option>
+                        </label>
+                        <label>
+                            <option value="Mes commandes">Mes commandes</option>
+                        </label>
+                        <label>
+                            <option value="Question sur un produit">Question sur un produit</option>
+                        </label>
+                        <label>
+                            <option value="R&eacute;clamation">R&eacute;clamation</option>
+                        </label>
+                        <label>
+                            <option value="Autres">Autres</option>
+                        </label>
+                    </select>
+                    <br>
+                    <label for="votre question">Votre question&#42:</label><textarea name="commentaire" rows="10"
+                        cols="50"></textarea>
+                </fieldset>
+                <br>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                    <label class="form-check-label" for="validationFormCheck1"><---- cocher cette case</label>
+                            <div class="invalid-feedback">Example invalid feedback text</div>
+                </div>
+                <br>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-outline-success">Valider</button>
+                    <button type="reset" class="btn btn-outline-danger">Annuler</button>
+                </div>
+        </form>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: aliceblue;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="troll.html">Mentions légales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="horaires.html">Horaires</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plan.html">plan du site</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+
+        <p style="color: red;" id="erreur"></p>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="/js/jarditou.js"></script>
+</body>
+
+</html>
